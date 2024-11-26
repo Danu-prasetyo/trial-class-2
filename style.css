@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  padding-inline: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+nav .left-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav .left-nav img {
+  height: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #eb374e;
+}
+
+nav .right-nav a {
+  background-color: #eb374e;
+  padding-inline: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+}
+
+nav .right-nav a:hover {
+  background-color: #d12038;
+  color: white;
+}
+
+nav .right-nav .icon {
+  display: none;
+}
+
+.personal {
+  display: flex;
+  padding-inline: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 32px;
+}
+
+.card {
+  width: 450px;
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.card .image img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.card .header h1 {
+  font-size: 32px;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.card table {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 6px;
+  border-collapse: collapse;
+}
+
+.card table tr th {
+  font-weight: 600;
+  padding: 6px;
+  text-align: center;
+}
+
+.card table tr td {
+  font-weight: 300;
+  padding: 6px;
+  text-align: center;
+}
+
+/* nth:child : pseudo class CSS untuk milih elemen yang punya
+posisi tertentu di dalam urutan anak elemen.
+argumen odd/even untuk milih elemen dengan urutan ganjil/genap */
+.card table tr:nth-child(even) {
+  background-color: #ffced5;
+}
+
+.personal .right h2 {
+  margin: 0;
+}
+
+.personal .right p {
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.personal .right .skill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.personal .right .skill .frontend {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 360px;
+}
+
+.personal .right .skill img {
+  width: 60px;
+  height: 60px;
+}
+
+.personal .right .skill .backend {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 360px;
+}
+
+.personal .right .findme {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.personal .right .findme h2 {
+  margin: 0;
+}
+
+.personal .right .findme .social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.personal .right .findme .social a img {
+  width: 50px;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  padding: 16px;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding-inline: 16px;
+    align-items: center;
+  }
+
+  nav .left-nav {
+    gap: 16px;
+    align-items: center;
+  }
+
+  nav .left-nav a img {
+    height: 24px;
+  }
+
+  nav .right-nav a {
+    display: none;
+  }
+
+  nav .right-nav .icon {
+    display: block;
+    background-color: black;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .right-nav .icon:hover {
+    background-color: black;
+  }
+
+  .material-symbols-outlined {
+    color: white;
+  }
+
+  .material-symbols-outlined:hover {
+    color: #d12038;
+  }
+
+  .personal {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 16px;
+  }
+
+  .personal .left {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: fit-content;
+  }
+
+  .personal .right h1,
+  h2,
+  .skill,
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+}

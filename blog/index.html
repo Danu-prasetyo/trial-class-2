@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=support_agent"
+    />
+    <script src="blog.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="left-nav">
+        <a href="../index.html"><img src="../assets/img/aigen-logo.png" alt="navlogo" /></a>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Blog</a>
+      </div>
+      <div class="right-nav">
+        <a href="../contact/index.html">Contact Me</a>
+        <a href="../contact/index.html" class="icon"><span class="material-symbols-outlined"> support_agent </span></a>
+      </div>
+    </nav>
+
+    <!-- blog -->
+    <section class="blog">
+      <div id="contents" class="blog-list">
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="https://dummyimage.com/600x400/000/fff" alt="blog image" />
+          </div>
+          <div class="blog-content">
+            <h1>Blog titile</h1>
+            <span class="detail-blog-content">26 nov 2024 09:00 | Author</span>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex itaque dolorem esse recusandae corrupti ipsum
+              praesentium illum. Quisquam, accusantium quis?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h2>Create Post</h2>
+            <div>
+              <label for="input-blog-title">Title</label>
+              <input type="text" name="title" id="input-blog-title" />
+            </div>
+            <div>
+              <label for="input-blog-content">Content</label>
+              <textarea name="content" id="input-blog-content"></textarea>
+            </div>
+            <div>
+              <span>Upload image</span>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <span>Attach file</span>
+                  <img src="../assets/img/file.png" alt="file" />
+                </label>
+                <input type="file" name="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">Post</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
